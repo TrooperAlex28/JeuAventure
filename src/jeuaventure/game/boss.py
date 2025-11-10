@@ -1,11 +1,11 @@
 import time
-from src.game.utils import slow_println
+from jeuaventure.game.utils import slow_println
 
-from src.game.constants import CombatResult
-from src.game.monstres import generate_final_boss
-from src.game.combat import combat
-from src.game.utils import slow_println
-from src.game.objets import epee_legendaire
+from jeuaventure.game.constants import CombatResult
+from jeuaventure.game.monstres import generate_final_boss
+from jeuaventure.game.combat import combat
+from jeuaventure.game.utils import slow_println
+from jeuaventure.game.objets import epee_legendaire
 
 def boss_encounter(joueur, difficulty):
     """Handle the final boss sequence: generate boss, run combat, and print outcome.

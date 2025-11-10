@@ -1,5 +1,5 @@
 import random
-from src.game.constants import Difficulty
+from jeuaventure.game.constants import Difficulty
 
 class Monstre:
     def __init__(self, nom, points_vies, attaque):

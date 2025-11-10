@@ -1,10 +1,10 @@
 import time
 import random
 
-from src.game.constants import CombatResult
-from src.game.objets import create_items, consume_potion
-from src.game.hero import display_status
-from src.game.utils import read_input, random_event
+from jeuaventure.game.constants import CombatResult
+from jeuaventure.game.objets import create_items, consume_potion
+from jeuaventure.game.hero import display_status
+from jeuaventure.game.utils import read_input, random_event
 
 def combat(j, m):
     print(f"Un {m.nom} apparaît ! (PV: {m.points_vies}, Att: {m.attaque})")

@@ -1,20 +1,14 @@
 import random
 import time
 import sys
-from src.game.constants import Difficulty, CombatResult
-from src.game.utils import read_input, random_event, slow_println
-from src.game.objets import Weapon, Shield, Potion
-from src.game.hero import Guerrier1, Guerrier2, Guerrier3, default_Guerrier
-from src.game.monstres import Monstre
-from src.game.monstres import generate_monster, generate_final_boss
-from src.game.combat import combat
-from src.game.boss import boss_encounter
-from src.game.objets import create_items, consume_potion
-from src.game.hero import display_status
-
-
-
-
+from jeuaventure.game.constants import Difficulty, CombatResult
+from jeuaventure.game.utils import read_input, random_event, slow_println
+from jeuaventure.game.objets import Weapon, Shield, Potion
+from jeuaventure.game.hero import Guerrier1, Guerrier2, Guerrier3, default_Guerrier, display_status
+from jeuaventure.game.monstres import Monstre, generate_monster, generate_final_boss
+from jeuaventure.game.combat import combat
+from jeuaventure.game.boss import boss_encounter
+from jeuaventure.game.objets import create_items, consume_potion
 
 
 
@@ -86,9 +80,6 @@ def game_loop(j, remaining_monsters, difficulty):
                     remaining_monsters -= 1
                     print(f"Monstres restants: {remaining_monsters}\n")
                     if remaining_monsters <= 0:
-                        # This part of the logic was unreachable in the original Rust code
-                        # because the boss fight happens after the game_loop.
-                        # I'll keep it similar for now.
                         return True
                 elif result == CombatResult.DEAD:
                     print("Fin de la partie.")

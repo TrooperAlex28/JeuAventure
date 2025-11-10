@@ -1,0 +1,8 @@
+{
+  // Add the project `src` folder to the analysis path so Pylance resolves `jeuaventure.*`
+  "python.analysis.extraPaths": ["./src"],
+
+  // Optional: enable linting to catch issues early in the editor
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false
+}
