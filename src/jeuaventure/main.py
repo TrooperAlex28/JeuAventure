@@ -49,17 +49,6 @@ def parse_hero_choice(s):
         return "guerrier"  # Default
     
 
-# read_input and random_event moved to utils.py
-
-
-
-
-
-
-
-
-
-
 def game_loop(j, remaining_monsters, difficulty):
     print(" ")
     slow_println("Vous êtes dans un donjon.", 300)
@@ -127,9 +116,11 @@ def game_loop(j, remaining_monsters, difficulty):
                     time.sleep(0.16)
                 else:
                     print("Vous laissez le bouclier.")
+                    print(" ")
                     time.sleep(0.14)
             else:
                 print("Rien d'intéressant ici...vous continuez votre quête.\n")
+                print(" ")
                 time.sleep(0.12)
 
         elif cmd in ["p", "potion"]:

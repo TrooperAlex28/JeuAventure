@@ -38,6 +38,7 @@ class default_Guerrier(InfoJoueur):
 
 def display_status(j):
     """Print the status of player `j`. Kept as a function so other modules can call it simply as display_status(j)."""
+    print("-"*20)
     print("-- État du joueur --")
     att = j.attaque_totale()
     def_total = j.defense_totale()
@@ -51,4 +52,4 @@ def display_status(j):
         print(f"Bouclier équipé: {j.equipped_shield.nom} (+{j.equipped_shield.defense} Def)")
     else:
         print("Bouclier équipé: Aucun")
-    print(" ")
+    print("-"*20)
