@@ -8,9 +8,9 @@ from jeuaventure.game.utils import slow_println
 from jeuaventure.game.objets import epee_legendaire
 
 def boss_encounter(joueur, difficulty):
-    """Handle the final boss sequence: generate boss, run combat, and print outcome.
+    """Gère la séquence du boss final : génère le boss, lance le combat et affiche le résultat.
 
-    This function is intentionally independent so it can be moved or tested separately.
+    Cette fonction est volontairement indépendante pour pouvoir être déplacée ou testée séparément.
     """
     time.sleep(1)
     slow_println("\n🎉 VICTOIRE ! Vous avez vaincu tous les monstres du donjon !", 300)

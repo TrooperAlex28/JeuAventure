@@ -37,7 +37,7 @@ class default_Guerrier(InfoJoueur):
         self.description = description
 
 def display_status(j):
-    """Print the status of player `j`. Kept as a function so other modules can call it simply as display_status(j)."""
+    """Affiche l'état du joueur `j`. Conservé comme fonction pour que d'autres modules puissent simplement l'appeler display_status(j)."""
     print("-"*20)
     print("-- État du joueur --")
     att = j.attaque_totale()

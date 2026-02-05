@@ -13,9 +13,9 @@ from jeuaventure.game.objets import create_items, consume_potion
 
 
 
-# Difficulty and CombatResult are provided by constants.py
+# Difficulty et CombatResult sont fournis par constants.py
 
-# slow_println moved to utils.py
+# slow_println déplacé dans utils.py
 
 def intro():
     slow_println("Bienvenue dans le jeu dont vous êtes le héros !", 400)
